@@ -52,13 +52,43 @@ nav a:hover {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    /* Organise les éléments du projet en colonne */
+    justify-content: space-between;
+    /* Assure que les éléments sont répartis sur toute la hauteur disponible */
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 30%;
+    min-width: 350px;
     text-align: center;
+    box-sizing: border-box;
+    /* Supprimer la hauteur fixe ici pour que les projets s'ajustent dynamiquement */
+    margin-bottom: 20px;
+    /* Espace entre les projets */
+}
+
+.project-but2 {
+    display: flex;
+    flex-direction: column;
+    /* Organise les éléments du projet en colonne */
+    justify-content: space-between;
+    /* Assure que les éléments sont répartis sur toute la hauteur disponible */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    /* Supprimer la hauteur fixe ici pour que les projets s'ajustent dynamiquement */
+    margin-bottom: 20px;
+    /* Espace entre les projets */
 }
 
 .project img {
@@ -91,4 +121,50 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+#years {
+    text-align: center;
+    color: white;
+}
+
+/* Style pour les boutons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980B9;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3498DB;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980B9;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    height: 50px;
+    /* Hauteur fixe pour le bouton */
+    line-height: 50px;
+    /* Centre le texte verticalement */
+    text-align: center;
+    /* Assure que le texte est centré horizontalement */
+}
+
+.project-link:hover {
+    background-color: #3498DB;
 }
